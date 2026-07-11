@@ -1,0 +1,3 @@
+ // int getSalary(){
+    //     return salary;
+    // }
