@@ -46,3 +46,6 @@ int main(){
 
     return 0;
 }
+
+//Sliding Window requires a monotonic property.
+//So it will only be used for positvie numbers

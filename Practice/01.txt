@@ -1,0 +1,22 @@
+K = 15
+vector<int>v = {10,12,20,30}
+
+l = 0;
+r = 0;
+n = size of vector
+sum = v[0]
+while(r<n){
+    while(l<=r && sum>k){
+        sum -= v[l] 
+shrinking of the array
+        l++;
+    }
+    if(k==sum){
+        len = r-l+1;
+        maxi = max(maxi, len);
+    }
+    r++
+    if(r<n){sum+=v[r]}/
+expansion of the array
+}
+return maxi
