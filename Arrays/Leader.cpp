@@ -4,9 +4,11 @@ using namespace std;
 class Solution {
 public:
     vector<int> leaders(vector<int>& nums) {
-        int n=nums.size();
-        int maxi=nums[n-1];
+        int n = nums.size();
+        int maxi = nums[n-1];
+
         vector<int>ans;
+
         if(nums.empty()){
             return ans;
         }
