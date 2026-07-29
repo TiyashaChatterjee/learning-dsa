@@ -6,10 +6,10 @@ class Solution{
     public:
     vector<int>Pascal(int numRows){
         int n=numRows;
-        vector<int>row(numRows, 1);
+        vector<int>row;
         long long val=1;
         row.push_back(val);
-        for(int k=1;k<=n;k++){
+        for(int k=1;k<n;k++){
             val=val*(n-k)/k;
 
             row.push_back(val);
@@ -23,9 +23,8 @@ int main() {
     int n = 5;
 
     // Generate and print Pascal's Triangle
-    vector<vector<int>> result = obj.Pascal(n);
-    for (auto &row : result) {
-        for (auto &val : row) cout << val << " ";
-        cout << endl;
+    vector<int> result = obj.Pascal(n);
+    for(int i=0;i<result.size();i++){
+        cout<<result[i];
     }
 }
